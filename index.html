@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>jQuery Calculator</title>
+    <script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="calc">
+        <h1>Calculator</h1>
+            <input class="calc-display">
+        
+        <div class="calculator-keys">
+            
+                
+                    <button type="button"  class="all-clear" value="C" onclick="c()">C</button>
+                    <button type="button"  class="operator"  value="/" onclick="insert('/')">/</button>
+                    <button type="button"  class="all-clear" value="<" onclick="deleteno()"><</button>
+                    <button type="button"  class="operator"  value="X" onclick="insert('*')">*</button>
+                
+                    <button type="button" value="7" onclick="insert(7)">7</button>
+                    <button type="button" value="8" onclick="insert(8)">8</button>
+                    <button type="button" value="9" onclick="insert(9)">9</button>
+                    <button type="button" value="-" class="operator" onclick="insert('-')">-</button>
+                
+                    <button type="button" value="4" onclick="insert(4)">4</button>
+                    <button type="button" value="5" onclick="insert(5)">5</button>
+                    <button type="button" value="6" onclick="insert(6)">6</button>
+                    <button type="button" value="+" class="operator" onclick="insert('+')">+</button>
+                
+                    <button type="button" value="1" onclick="insert(1)">1</button>
+                    <button type="button" value="2" onclick="insert(2)">2</button>
+                    <button type="button" value="3" onclick="insert(3)">3</button>
+                    <button type="button" class="equal-sign" value="="  onclick="equal()">=</button>
+               
+                    <button type="button" value="0" onclick="insert(0)">0</button>
+                    <button type="button" class="decimal" value="." onclick="insert('.')">.</button>
+                
+        
+        </div>
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
